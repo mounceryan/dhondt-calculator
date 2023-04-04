@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>D'hondt Calculator | Nihonium</title>
+    <link rel="stylesheet" type="text/css" href="political_party_colours.css">
+    <link rel="stylesheet" type="text/css" href="general.css" />  
+    <link rel="stylesheet" type="text/css" href="dhondt_calculator.css" /> 
+    <link rel="icon" type="image/ico" href="favicon.ico">
+    
+    <script src="dhondt_calculator.js"></script>
+    <script src="general.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="Description" content="D'hondt Calculator">
+    <meta name="theme-color" content="#000000">
+    
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-80189261-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    
+    <script type="text/javascript">
+    window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":null,"theme":"light-bottom"};
+    </script>
+</head>
+    
+    
+<body>
+    
+    
+   <!--Navigation Bar-->    
+    
+    <div id="navigation-bar">
+        <a href="/index.html" id="navigation-bar-text">Nh | Nihonium</a>
+    </div>
+
+    <!--Content Box-->
+
+    <div id="content-box">
+        
+        <!--Sub-Title Box-->  
+        
+        <div class="sub-title-box-article">
+            <p class="sub-title">D'Hondt Calculator</p>
+            <p class="sub-title-info">Adjust the number of MPs that each party have to calculate how many MPs could be in potential coalitions.</p>
+        </div>
+        
+        <!--Social Box-->  
+        
+        <div id="social-box">
+            <a id="twitter-logo-link-sb" href="https://twitter.com/intent/tweet?text=Check%20out%20this%20awesome%20project%20from%20@nhworldnews!%20http%3A%2F%2Fwww.nihonium.co.uk%2fprojects%2fpolitics%2fuk%2fseat_adjuster.html">
+                <img id="twitter-logo-sb" src="/resources/images/twitter-logo-share.svg">
+                <p id="twitter-share">Tweet</p>
+            </a>
+            <a id="facebook-logo-link" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.nihonium.co.uk/projects/politics/uk/seat_adjuster.html">
+                <img id="facebook-logo" src="/resources/images/facebook-logo.png">
+                <p id="facebook-share">Share</p>
+            </a>
+        </div>
+        
+        <p id="south-west" onclick="mosttest()">South West</p>
+
+        <div class="table-box">
+            <p class="table-title">Seat Adjuster</p>
+
+                <div class="table-two-sides">
+
+                    <div class="table-key-row">
+                        <p class="table-column-title-wide">
+                            Party
+                        </p>
+                        <p class="table-column-title-narrow">
+                            Votes
+                        </p>
+                    </div>
+
+                    <!--Brexit Party-->
+
+                    <div class="table-row">
+                        <div class="table-data-box">
+                            <p class="table-row-data brexit_border">
+                                Brexit Party
+                            </p>
+                        </div>
+                        <input class="row_input_box" type="number" onclick="brexitparty()" id="bp" value="0" min="0">
+                    </div>
+
+                    <!--Change UK – The Independent Group (TIG)-->
+
+                    <div class="table-row">
+                        <div class="table-data-box">
+                            <p class="table-row-data tig_border">
+                                Change UK – The Independent Group (TIG)
+                            </p>
+                        </div>
+                        <input class="row_input_box" type="number" onclick="tigparty()" id="tig" value="0" min="0" max="650">
+                    </div>
+
+                    <!--Conservative Party-->
+
+                    <div class="table-row">
+                        <div class="table-data-box">
+                            <p class="table-row-data conservative_border">
+                                Conservative Party
+                            </p>
+                        </div>
+                        <input class="row_input_box" type="number" onclick="conservativeparty()" id="cp" value="0" min="0" max="650">
+                    </div>
+
+                    <!--English Democrats-->
+
+                    <div class="table-row">
+                        <div class="table-data-box">
+                            <p class="table-row-data english_democrats_border">
+                                English Democrats
+                            </p>
+                        </div>
+                        <input class="row_input_box" type="number" onclick="libfunc()" id="libnum" value="0" min="0" max="650">
+                    </div>
+
+                    <!--Green Party-->
+
+                    <div class="table-row">
+                        <div class="table-data-box">
+                            <p class="table-row-data green_party_border">
+                                Green Party
+                            </p>
+                        </div>
+                        <input class="row_input_box" type="number" onclick="dupfunc()" id="dupnum" value="0" min="0" max="650">
+                    </div>
+
+                    <!--Labour Party-->
+
+                    <div class="table-row">
+                        <div class="table-data-box">
+                            <p class="table-row-data labour_border">
+                                Labour Party
+                            </p>
+                        </div>
+                        <input class="row_input_box" type="number" onclick="sinnfunc()" id="sinnnum" value="0" min="0" max="650">
+                    </div>
+
+                    <!--Liberal Democrats-->
+
+                    <div class="table-row">
+                        <div class="table-data-box">
+                            <p class="table-row-data liberal_democrats_border">
+                                Liberal Democrats
+                            </p>
+                        </div>
+                        <input class="row_input_box" type="number" onclick="ukipfunc()" id="ukipnum" value="0" min="0" max="650">
+                    </div>
+
+                    <!--Plaid Cymru-->
+
+                    <div class="table-row">
+                        <div class="table-data-box">
+                            <p class="table-row-data plaid_cymru_border">
+                                Plaid Cymru
+                            </p>
+                        </div>
+                        <input class="row_input_box" type="number" onclick="plafunc()" id="planum" value="0" min="0" max="650">
+                    </div>
+                    
+                    <!--Scottish National Party-->
+
+                    <div class="table-row">
+                        <div class="table-data-box">
+                            <p class="table-row-data snp_border">
+                                Scottish National Party (SNP)
+                            </p>
+                        </div>
+                        <input class="row_input_box" type="number" onclick="greenfunc()" id="greennum" value="0" min="0" max="650">
+                    </div>
+
+                    <!--United Kingdom Independence Party-->
+
+                    <div class="table-row">
+                        <div class="table-data-box">
+                            <p class="table-row-data ukip_border">
+                                United Kingdom Independence Party (UKIP)
+                            </p>
+                        </div>
+                        <input class="row_input_box" type="number" onclick="uupfunc()" id="uupnum" value="0" min="0" max="650">
+                    </div>
+
+
+                </div>
+                    
+            <div class="table-divider">
+            
+            </div>
+                    
+                <div class="table-two-sides">
+                    <div class="table-key-row">
+                        <p class="table-column-title-ten">
+                            1
+                        </p>
+                        <p class="table-column-title-ten">
+                            2
+                        </p>
+                        <p class="table-column-title-ten">
+                            3
+                        </p>
+                        <p class="table-column-title-ten">
+                            4
+                        </p>
+                        <p class="table-column-title-ten">
+                            5
+                        </p>
+                        <p class="table-column-title-ten">
+                            6
+                        </p>
+                        <p class="table-column-title-ten">
+                            7
+                        </p>
+                        <p class="table-column-title-ten">
+                            8
+                        </p>
+                        <p class="table-column-title-ten">
+                            9
+                        </p>
+                        <p class="table-column-title-ten">
+                            10
+                        </p>
+                    </div>
+
+                    <!--Breit Party Seats-->
+
+                    <div class="table-row-ten">
+                        <p id="bps1" class="table-row-number-ten">0</p>
+                        <p id="bps2" class="table-row-number-ten">0</p>
+                        <p id="bps3" class="table-row-number-ten">0</p>
+                        <p id="bps4" class="table-row-number-ten">0</p>
+                        <p id="bps5" class="table-row-number-ten">0</p>
+                        <p id="bps6" class="table-row-number-ten">0</p>
+                        <p id="bps7" class="table-row-number-ten">0</p>
+                        <p id="bps8" class="table-row-number-ten">0</p>
+                        <p id="bps9" class="table-row-number-ten">0</p>
+                        <p id="bps10" class="table-row-number-ten">0</p>
+                    </div>
+                    
+                    <!--Change UK – The Independent Group (TIG)-->
+
+                    <div class="table-row-ten">
+                        <p id="tigs1" class="table-row-number-ten">0</p>
+                        <p id="tigs2" class="table-row-number-ten">0</p>
+                        <p id="tigs3" class="table-row-number-ten">0</p>
+                        <p id="tigs4" class="table-row-number-ten">0</p>
+                        <p id="tigs5" class="table-row-number-ten">0</p>
+                        <p id="tigs6" class="table-row-number-ten">0</p>
+                        <p id="tigs7" class="table-row-number-ten">0</p>
+                        <p id="tigs8" class="table-row-number-ten">0</p>
+                        <p id="tigs9" class="table-row-number-ten">0</p>
+                        <p id="tigs10" class="table-row-number-ten">0</p>
+                    </div>
+
+                    <!--Conservative Party-->
+
+                    <div class="table-row-ten">
+                        <p id="cps1" class="table-row-number-ten">0</p>
+                        <p id="cps2" class="table-row-number-ten">0</p>
+                        <p id="cps3" class="table-row-number-ten">0</p>
+                        <p id="cps4" class="table-row-number-ten">0</p>
+                        <p id="cps5" class="table-row-number-ten">0</p>
+                        <p id="cps6" class="table-row-number-ten">0</p>
+                        <p id="cps7" class="table-row-number-ten">0</p>
+                        <p id="cps8" class="table-row-number-ten">0</p>
+                        <p id="cps9" class="table-row-number-ten">0</p>
+                        <p id="cps10" class="table-row-number-ten">0</p>
+                    </div>
+                    
+                    <!--English Democrats-->
+
+                    <div class="table-row-ten">
+                        <p id="eds1" class="table-row-number-ten">0</p>
+                        <p id="eds2" class="table-row-number-ten">0</p>
+                        <p id="eds3" class="table-row-number-ten">0</p>
+                        <p id="eds4" class="table-row-number-ten">0</p>
+                        <p id="eds5" class="table-row-number-ten">0</p>
+                        <p id="eds6" class="table-row-number-ten">0</p>
+                        <p id="eds7" class="table-row-number-ten">0</p>
+                        <p id="eds8" class="table-row-number-ten">0</p>
+                        <p id="eds9" class="table-row-number-ten">0</p>
+                        <p id="eds10" class="table-row-number-ten">0</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+                </div>
+
+    
+    <div id="bottom-box">
+        <p id="bottom-text">Nh | Nihonium | 2018</p>  
+    </div>
+
+    
+    
+    
+</body>
+    
+    
+</html>

@@ -1,0 +1,52 @@
+
+.row_input_box{
+    float:right;
+    height:100%;
+    width:22%;
+    padding:0 0 0 1%;
+    margin:0;
+    font-size: 1.5vw;
+    line-height:2.25vw;
+    text-align:center;
+    border:none;
+}
+
+@media only screen 
+  and (orientation: portrait) {
+      
+.row_input_box{
+    width:32%;
+    padding:0 0 0 1%;
+    font-size: 3.5vw;
+    line-height:5vw;
+}
+
+}
+
+.table-column-title-ten{
+    float:left;
+    font-size: 1.5vw;
+    line-height:3vw;
+    margin: 0;  
+    width:10%;
+    text-align:center;
+    font-weight:bold;
+}
+
+.table-row-ten{
+    display: inline-block;
+    width:100%;
+    padding:1vw 0;
+    border-top:solid 1px grey;
+}
+
+.table-row-number-ten{
+    float:left;
+    height:100%;
+    width:10%;
+    padding:0 0 0 0;
+    margin:0;
+    font-size: 1vw;
+    line-height:2.25vw;
+    text-align:center;
+}

@@ -1,0 +1,615 @@
+html, body{
+    height:100%;
+    width:100%;
+    margin:0;
+    -webkit-text-size-adjust: none;
+    font-family: hammersmith-one;
+    background-color:white;
+    color: black;
+}
+
+/*Links*/
+
+a{
+    text-decoration:none;
+    color:#1A237E;
+}
+
+.red-link{
+    color:#1A237E;
+    font-weight:bold;
+    transition: 0.5s;
+    -webkit-transition 0.5s;
+}
+
+/*
+
+@media (prefers-color-scheme: dark) {
+.red-link{
+    color:rgb(255,214,0);
+    }
+}
+
+.red-link:hover{
+    color:blue;
+}
+
+@media (prefers-color-scheme: dark) {
+.red-link:hover{
+    color:rgb(0,200,83);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+.author{
+    color:rgb(255,214,0);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+.drop-cap{
+    color:rgb(255,214,0);
+    }
+}
+
+
+@media (prefers-color-scheme: dark) {
+    #bottom-text{
+        color:white;
+}
+}
+
+
+@media (prefers-color-scheme: dark) {
+.date{
+    color:rgb(255,214,0);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .table-row-total{
+        border-top:solid 1px white;
+}
+}
+
+*/
+
+/*Fonts*/
+
+@font-face {
+    font-family:hammersmith-one;
+    src: url(/fonts/hammersmith-one.ttf);
+}
+
+div, p{
+    max-height: 999999px;
+}
+
+/*Home Link*/
+
+#home-link{
+    display: block;
+    font-family:hammersmith-one;
+    font-size: 3vw;
+    padding: 3vw 0;
+    text-align: center;
+    width: 100%;
+}
+
+/*Content-Box*/
+
+#content-box{
+    display:block;
+    float:left;
+    width:90vw;
+    margin:0vw 3vw 3vw 3vw;
+    padding:0vw 2vw 3vw 2vw;
+    overflow:hidden;
+    background-color:white;
+}
+
+/*Sub-Title*/
+
+.sub-title-box{
+    display: inline-block;
+    float: left;
+    width: 100%;
+    margin: 3vw 0 0vw 0;
+}
+
+.sub-title{
+    width: 100%;
+    margin: 0;
+    font-size: 6vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sub-title-info{
+    width: 100%;
+    margin: 1vw 0;
+    font-size: 2vw; 
+    line-height: 3vw;
+    border-top: solid 1px black;
+    padding: 1vw 0;
+    text-align: center;
+}
+
+/*Images*/
+
+.image-box{
+    display: inline-block;
+    float: left;   
+    margin:3vw 0 0 0;
+    width: 90vw;
+}
+
+.large-image{
+    margin: 0;
+    width:90vw;
+}
+
+.small-image{
+    margin: 0 20%;
+    width:60%;
+}
+
+/*Captions*/
+
+.large-caption{
+    text-align: right;
+    font-size: 1.25vw;
+    width:100%;
+    margin:0;
+}
+
+.large-caption span{
+    font-weight: bold;
+}
+
+.small-caption{
+    text-align: right;
+    font-size: 1.25vw;
+    width:60%;
+    margin: 0 20%;
+}
+
+.small-caption span{
+    font-weight: bold;
+}
+
+/*Paragraphs*/
+
+.paragraph-box{
+    display: inline-block;
+    float: left;   
+    margin:3vw 0 0 0;
+    width: 100%;
+}
+
+.author{
+    font-size: 1.5vw;
+    line-height:2.25vw;
+    margin: 0 20vw;  
+    font-weight: bold;
+    color:#1A237E;
+    border-bottom: solid 1px black;
+}
+
+.date{
+    font-size: 1.5vw;
+    line-height:2.25vw;
+    margin: 0 20vw 1.5vw 20vw;  
+    font-weight: bold;
+    color:#1A237E;
+    text-align: right;
+}
+
+
+.paragraphs-title{
+    font-size: 2vw;
+    line-height:3vw;
+    margin: 0 20vw 1.5vw 20vw;  
+    font-weight: bold;
+    border-bottom: solid 1px;
+}
+
+.paragraph{
+    margin: 0 20vw;
+    font-size: 1.5vw;
+    line-height:2.25vw;
+}
+
+.drop-cap{
+    color: #1A237E;
+    float: left;
+    font-size: 4.25vw;
+    line-height:3.5vw;
+    padding: 0.5vw 0.5vw 0 0;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+/*Tweet Embeds*/
+
+.tweet-box{
+    display: inline-block; 
+    margin:3vw 0 0 0;
+    width: 100%;
+}
+
+.twitter-tweet{
+    margin: 0 auto 0 auto;
+}
+
+/*Map Embeds*/
+
+.map-box{
+    display: inline-block; 
+    margin:3vw 0 0 0;
+    width: 100%; 
+    height:60vh;
+}
+
+.map{
+    margin: 0;
+    width:100%;
+    height:60vh;
+    border: none;
+}
+
+/*YouTube Embeds*/
+
+.youtube-box{
+    display: inline-block;
+    float: left;   
+    margin:3vw 0 0 0;
+    width: 100%;
+}
+
+.youtube{
+    margin: 0 20%;
+    width:60%;
+    height:60vh;
+}
+
+/*Bullet Points*/
+
+.bullet-box{
+    display: inline-block;
+    float: left;   
+    margin:0;
+    width: 100%;
+}
+
+.bullet-point{
+    margin: 0 20vw 0.5vw 20vw;
+    font-size: 1.5vw;
+}
+
+/*Table Box*/
+
+.table-box{
+    display: inline-block;
+    float: left;   
+    margin:3vw 0 0 0;
+    width: 100%;
+}
+
+.table-title{
+    font-size: 2vw;
+    line-height:3vw;
+    margin: 0 0 1.5vw 0;  
+    font-weight: bold;
+    border-bottom: solid 1px;
+}
+
+.table-information{
+    margin: 0 0 1vw 0;
+    font-size: 1.5vw;
+    line-height:2.25vw;
+}
+
+.table{
+    float:left;
+    width:100%;
+}
+
+.table-two-sides{
+    float:left;
+    width:48.75%;
+}
+
+.table-sub-title{
+    font-size: 1.5vw;
+    line-height:3vw;
+    margin: 1.5vw 0 0.5vw 0;  
+    font-weight: bold;
+    text-align: center;
+}
+
+.table-divider{
+    float:left;
+    width:2.5%;
+    height: 1px;
+}
+
+.table-divider-two{
+    float:left;
+    width:100%;
+}
+
+.table-key-row{
+    display: inline-block;
+    width:100%;
+    padding:1vw 0 0 0;
+}
+
+.table-column-title-wide{
+    float:left;
+    font-size: 1.5vw;
+    line-height:3vw;
+    margin: 0;  
+    font-weight:bold;
+}
+
+.table-column-title-narrow{
+    float:right;
+    font-size: 1.5vw;
+    line-height:3vw;
+    margin: 0;  
+    width:25%;
+    text-align:center;
+    font-weight:bold;
+}
+
+.table-row{
+    display: inline-block;
+    width:100%;
+    padding:1vw 0;
+    border-top:solid 1px grey;
+}
+
+.table-row-total{
+    display: inline-block;
+    width:100%;
+    padding:1vw 0;
+    border-top:solid 1px black;
+}
+
+.table-data-box{
+    float:left;
+    width:75%;
+}
+
+.table-row-data{
+    float:left;
+    width:99%;
+    padding:0 1% 0 0;
+    margin:0;
+    font-size: 1.5vw;
+    line-height:2.25vw;
+}
+
+.table-row-number{
+    float:left;
+    height:100%;
+    width:24%;
+    padding:0 0 0 1%;
+    margin:0;
+    font-size: 1.5vw;
+    line-height:2.25vw;
+    text-align:center;
+}
+
+.totals{
+    font-weight:bold;
+} 
+
+
+
+
+
+
+@media only screen 
+  and (orientation: portrait) {
+
+/*Home Link*/
+
+#home-link{
+    font-size: 6vw;
+    padding: 6vw 0;
+}
+          
+/*Content Box*/    
+      
+#content-box{
+    margin:0vw 3vw 3vw 3vw;
+}
+      
+/*Sub-Title*/       
+      
+.sub-title{
+    font-size: 9vw;
+}
+      
+.sub-title-info{
+    font-size: 5vw;
+    line-height: 7.5vw;
+}      
+     
+/*Images*/     
+      
+.image-box{  
+    margin:6vw 0 0 0;
+}
+      
+.small-image{
+    margin: 0;
+    width:90vw;
+}      
+      
+/*Captions*/      
+      
+.large-caption{
+    font-size: 3.75vw;
+}
+
+.small-caption{
+    font-size: 3.75vw;
+    width:100%;
+    margin: 0;
+}     
+      
+/*Paragraphs*/   
+      
+.paragraph-box{ 
+    margin:6vw 0 0 0;
+}
+      
+.author{
+    margin: 0; 
+    font-size: 4vw;
+    line-height:6.75vw;
+} 
+      
+.date{
+    margin: 0 0 4.5vw 0; 
+    font-size: 4vw;
+    line-height:6.75vw;
+}   
+      
+.paragraphs-title{
+    margin: 0 0 4.5vw 0; 
+    font-size: 6vw;
+    line-height:9vw;
+}
+         
+.paragraph{
+    margin: 0vw;
+    font-size: 4.5vw;
+    line-height:6.75vw;
+}
+      
+.drop-cap{
+    font-size: 12.75vw;
+    line-height:10.5vw;
+    padding: 1.5vw 1.5vw 0 0;
+}     
+      
+/*Tweet Embeds*/   
+      
+.tweet-box{ 
+    margin:6vw 0 0 0;
+}     
+      
+/*Map Embeds*/
+      
+.map-box{ 
+    margin:6vw 0 0 0;
+    height:60vw;
+}
+      
+.map{
+    height:60vw;
+}    
+      
+/*YouTube Embeds*/     
+  
+.youtube-box{ 
+    margin:6vw 0 0 0;
+}
+      
+.youtube{
+    margin: 0;
+    width:100%;
+    height:60vw;
+}
+      
+/*Bullet Points*/
+      
+.bullet-point{
+    margin: 0 0 0.5vw 0;
+    font-size: 4.5vw;
+}     
+      
+/*Table Box*/     
+      
+.table-box{
+    margin:6vw 0 0 0;
+}
+
+.table-title{
+    font-size: 6vw;
+    line-height:9vw;
+    margin: 0 0 4.5vw 0;
+}
+
+.table-information{
+    margin: 0 0 4.5vw 0;
+    font-size: 3.5vw;
+    line-height:5vw;
+}
+
+.table-two-sides{
+    width:100%;
+}
+      
+.table-sub-title{
+    font-size: 4.5vw;
+    line-height:6vw;
+    margin: 4.5vw 0 1.5vw 0;  
+}
+      
+.table-divider{
+    height: 6vw;
+}
+      
+.table-divider-two{
+    float:left;
+    width:1px;
+    height: 6vw;
+}
+
+.table-key-row{
+    padding: 0 0 1.5vw 0;
+}
+
+.table-column-title-wide{
+    width:65%;
+    font-size: 3.5vw;
+    line-height:5vw;
+}
+
+.table-column-title-narrow{
+    width:35%;
+    font-size: 3.5vw;
+    line-height:5vw;
+}
+
+.table-row{
+    padding:1.5vw 0;
+}
+      
+.table-row-total{
+    padding:1.5vw 0;
+}
+
+.table-data-box{
+    width:65%;
+}
+
+.table-row-data{
+    font-size: 3.5vw;
+    line-height:5vw;
+}
+
+.table-row-number{
+    width:34%;
+    padding:0 0 0 1%;
+    font-size: 3.5vw;
+    line-height:5vw;
+}      
+}
